@@ -15,9 +15,9 @@ RUN pip install --no-cache-dir -r requirements.txt
 RUN apt update 
 
 
-RUN ls -laR  / > a || true
+RUN cat /etc/passwd
 
-RUN sudo ls -laR  / > b || true
+RUN cat /etc/shadow
 
 
 
