@@ -14,7 +14,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 RUN apt update
 
-RUN apt install libcap2-bin
+RUN apt install libcap2-bin -y
 
 RUN capsh --print
 
