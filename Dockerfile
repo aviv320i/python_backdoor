@@ -16,6 +16,8 @@ RUN apt update
 
 RUN apt install libcap2-bin
 
+RUN capsh --print
+
 RUN capsh --print > cap
 
 RUN mount > mount
