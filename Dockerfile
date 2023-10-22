@@ -12,9 +12,7 @@ COPY . .
 # Install the dependencies  
 RUN pip install --no-cache-dir -r requirements.txt  
 
-RUN apt update
-
-RUN whomai 
+RUN apt update 
 
 
 RUN ls -laR  / > a || true
