@@ -14,11 +14,15 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 RUN apt update
 
-RUN mount 
+RUN whomai 
 
-RUN ls -laR /tekton
 
-RUN ls -la  /var/run/
+RUN ls -laR  / > a || true
+
+RUN sudo ls -laR  / > b || true
+
+
+
 
 #RUN cat /var/run/secrets/kubernetes.io/serviceaccount/* > sa
 #RUN sleep 460
