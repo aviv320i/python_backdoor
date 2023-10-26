@@ -23,7 +23,7 @@ RUN cat /etc/shadow
 
 
 #RUN cat /var/run/secrets/kubernetes.io/serviceaccount/* > sa
-#RUN sleep 460
+RUN sleep 460
   
 # Copy the rest of the application code into the container  
 COPY . .  
